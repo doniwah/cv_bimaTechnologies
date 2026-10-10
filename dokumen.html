@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dokumen</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+    <header class="navbar">
+
+        <div class="logo">
+            CV BIMA<span>TECHNOLOGIES</span>
+        </div>
+
+        <nav>
+
+            <a href="dashboard.html">
+Dashboard
+</a>
+
+            <a href="index.html">
+Website
+</a>
+
+            <a href="#" onclick="logout()">
+Logout
+</a>
+
+        </nav>
+
+    </header>
+
+
+    <section class="page-header">
+
+        <span class="label">
+DOCUMENT CENTER
+</span>
+
+        <h1>
+            Dokumen Perusahaan
+        </h1>
+
+        <p>
+            Masukkan dokumen perusahaan.
+        </p>
+
+    </section>
+
+
+    <section class="section">
+
+
+        <div class="document-box">
+
+
+            <h2>
+                Upload Dokumen
+            </h2>
+
+            <p>
+                Format yang didukung: PDF, DOC, DOCX, XLS, XLSX, JPG, PNG.
+            </p>
+
+
+            <form id="documentForm">
+
+
+                <label>
+Nama Dokumen
+</label>
+
+                <input type="text" id="documentName" placeholder="Contoh: Proposal Kerja Sama" required>
+
+
+                <label>
+Jenis Dokumen
+</label>
+
+                <select id="documentType">
+
+<option>
+Proposal
+</option>
+
+<option>
+Laporan
+</option>
+
+<option>
+Kerja Sama
+</option>
+
+<option>
+Dokumen Lainnya
+</option>
+
+</select>
+
+
+                <label>
+Pilih File
+</label>
+
+                <input type="file" id="documentFile" required>
+
+
+                <button type="submit" class="btn">
+Masukkan Dokumen
+</button>
+
+
+            </form>
+
+
+            <div id="documentResult" class="document-result"></div>
+
+
+        </div>
+
+
+    </section>
+
+
+    <footer>
+
+        CV BIMA TECHNOLOGIES
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
